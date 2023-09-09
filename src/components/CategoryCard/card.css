@@ -1,0 +1,95 @@
+.card_a {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 350px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s;
+}
+
+.card_a:hover {
+  transform: scale(0.9);
+}
+
+.card_a img {
+  width: 60%;
+}
+
+.card_a h2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px) saturate(150%);
+  -webkit-backdrop-filter: blur(4px) saturate(150%);
+  text-align: center;
+  padding: 8px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  user-select: none;
+}
+
+.card_a.ciencia {
+  background: rgb(168, 85, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(168, 85, 247, 1) 0%,
+    rgba(236, 72, 144, 1) 100%
+  );
+}
+.card_a.tecnología {
+  background: rgb(125, 211, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(125, 211, 252, 1) 0%,
+    rgba(49, 46, 129, 1) 100%
+  );
+}
+.card_a.filosofía {
+  background: rgb(251, 191, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(251, 191, 36, 1) 0%,
+    rgba(5, 150, 105, 1) 100%
+  );
+}
+.card_a.deportes {
+  background: rgb(163, 230, 53);
+  background: linear-gradient(
+    90deg,
+    rgba(163, 230, 53, 1) 0%,
+    rgba(15, 118, 110, 1) 100%
+  );
+}
+.card_a.literatura {
+  background: rgb(248, 113, 113);
+  background: linear-gradient(
+    90deg,
+    rgba(248, 113, 113, 1) 0%,
+    rgba(161, 161, 170, 1) 100%
+  );
+}
+.card_a.geografía {
+  background: rgb(165, 243, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(165, 243, 252, 1) 0%,
+    rgba(217, 249, 157, 1) 100%
+  );
+}
+.card_a.historia {
+  background: rgb(76, 29, 149);
+  background: linear-gradient(
+    90deg,
+    rgba(76, 29, 149, 1) 0%,
+    rgba(244, 63, 94, 1) 100%
+  );
+}
