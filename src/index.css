@@ -23,6 +23,7 @@ button {
   border: none;
   background: none;
   cursor: pointer;
+  font-family: "Sono", sans-serif;
 }
 
 a {
