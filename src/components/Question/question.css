@@ -9,6 +9,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 .question_article-1,
@@ -76,16 +77,17 @@
 .question_article-2 div button {
   display: block;
   width: 200px;
-  height: 40px;
-  padding: 5px;
+  height: 50px;
+  padding: 0 4px;
   background-color: #fff;
   text-align: center;
   border-radius: 10px;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #121a3e;
   cursor: pointer;
   transition: all 0.4s;
+  overflow: hidden;
 }
 
 .question_article-2 div button:hover {
@@ -119,5 +121,9 @@
 @media screen and (min-width: 800px) {
   .question_section {
     border-radius: 20px;
+  }
+
+  .question_article-2 div button {
+    font-size: 1.2rem;
   }
 }

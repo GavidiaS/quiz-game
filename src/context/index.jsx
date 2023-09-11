@@ -20,6 +20,7 @@ export const QuizProvider = ({ children }) => {
   }
   function resetIndexScore() {
     setState((prevState) => ({ ...prevState, index: 0, score: 0 }));
+    answersQuiz();
   }
   function incrementScore() {
     setState((prevState) => ({ ...prevState, score: prevState.score + 1 }));

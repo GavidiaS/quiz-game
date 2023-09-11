@@ -1,9 +1,11 @@
 import "./question.css";
 import { useQuizContext } from "../../context/hooks";
 import { useState } from "react";
+import Results from "../Results";
 
 export default function Question({ handleStart }) {
   const [value, setValue] = useState(false);
+  const [result, setResult] = useState(false);
   const {
     categoryQuiz,
     index,
@@ -30,7 +32,7 @@ export default function Question({ handleStart }) {
       nextQuizIndex();
       setValue(false);
     } else {
-      // Mostrar resultado
+      setResult(true);
     }
   }
   return (
@@ -67,6 +69,9 @@ export default function Question({ handleStart }) {
           {index < categoryQuiz.length - 1 ? "Siguiente Pregunta" : "Finalizar"}
         </button>
       </article>
+      {result ? (
+        <Results handleStart={handleStart} close={() => setResult(false)} />
+      ) : null}
     </section>
   );
 }
